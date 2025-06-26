@@ -89,6 +89,7 @@ This tool was developed to address specific issues faced by organizations managi
 
 <hr>
 
+
 ## **Prerequisites (IMPORTANT)**
 
 Before using this tool, please ensure you complete the following steps:
@@ -98,30 +99,40 @@ Before using this tool, please ensure you complete the following steps:
     
     [**Click here to make a copy of the Google Spreadsheet**](https://docs.google.com/spreadsheets/d/1ciOF8IqBuITHDi4BEXk0RNRtJ5KCfdIN5VD_QaGGacQ/copy)
     
-    *(Alternatively, you can open the spreadsheet and go to `File > Make a copy`)*
-    
-  <li><strong>Set up the linked Google Form</strong><br>
-      After making a copy of the spreadsheet, a linked Google Form will also be copied automatically. To access the form:<br>
-      - Go to the <strong>FormResponses</strong> tab.<br>
-      - Click on <code>Form > Go to live form</code> in the menu bar.<br>
-      - This will open the copied Google Form in a new tab.<br>
-      Verify that the form is linked to your copied spreadsheet by submitting a test response. The response should appear in the <strong>FormResponses</strong> tab of your spreadsheet.
-  </li>
-  <li><strong>Copy the Google Form ID</strong><br>
-      While viewing the copied Google Form, locate the <strong>Form ID</strong> in the URL. The Form ID is the long string of characters in the form's URL:<br>
-      <code>https://docs.google.com/forms/d/&lt;FORM_ID&gt;/edit</code>
-  </li>
-  <li><strong>Update the App Script with your Google Form ID</strong><br>
-      Open the copied spreadsheet.<br>
-      Navigate to <code>Extensions > Apps Script</code> in the menu bar.<br>
-      In the Apps Script editor, locate the <code>FormFunctions.gs</code> file.<br>
-      Replace <code>"YOUR_FORM_ID_HERE"</code> with the Form ID you copied in step 3.<br>
-      Example:<br>
-      <code>const form = FormApp.openById("1r83rprhTBb-SFDEVtApRt41zaMKN_NgMzYQIKLKIpNY");</code><br>
-      Save the script by clicking the <strong>Save</strong> icon.
-  </li>
-</ol>
+    *(Alternatively, you can open the [spreadsheet](https://docs.google.com/spreadsheets/d/1ciOF8IqBuITHDi4BEXk0RNRtJ5KCfdIN5VD_QaGGacQ/edit?usp=sharing)　and go to `File > Make a copy`)*
 
+    **Important Note:** When you make a copy of this Google Spreadsheet using the link above, all associated Apps Script functions (`.gs` files) are automatically copied with it. Therefore, there is no need to download separate `.gs` files from this repository or download the spreadsheet as an Excel file.
+
+ **If you were to download this file as an Excel spreadsheet, please be aware that it is NOT recommended.** Doing so will break the embedded Apps Script functionality. If you were to proceed with an Excel file, you would then need to:
+    *   Upload the Excel file to Google Drive.
+    *   Convert it to Google Spreadsheet format.
+    *   Open the Apps Script editor (`Extensions > Apps Script`).
+    *   Manually create all `.gs` files and copy-paste the script code from this GitHub repository into them.
+    *   Re-assign the functions to the buttons (drawing objects) on the spreadsheet.
+    For these reasons, it is highly recommended to use the 'Make a copy' link provided above for a seamless setup.
+    
+
+
+2.  **Set up the linked Google Form**
+    After making a copy of the spreadsheet, a linked Google Form will also be copied automatically. To access the form:
+    *   Go to the **FormResponses** tab.
+    *   Click on `Form > Go to live form` in the menu bar.
+    *   This will open the copied Google Form in a new tab.
+    Verify that the form is linked to your copied spreadsheet by submitting a test response. The response should appear in the **FormResponses** tab of your spreadsheet.
+
+3.  **Copy the Google Form ID**
+    While viewing the copied Google Form, locate the **Form ID** in the URL. The Form ID is the long string of characters in the form's URL:
+    `https://docs.google.com/forms/d/<FORM_ID>/edit`
+
+4.  **Update the App Script with your Google Form ID**
+    Open the copied spreadsheet.
+    Navigate to `Extensions > Apps Script` in the menu bar.
+    In the Apps Script editor, locate the `FormFunctions.gs` file.
+    Replace `"YOUR_FORM_ID_HERE"` with the Form ID you copied in step 3.
+    Example:
+    `const form = FormApp.openById("1r83rprhTBb-SFDEVtApRt41zaMKN_NgMzYQIKLKIpNY");`
+    Save the script by clicking the **Save** icon.
+    
 ## **Setup**
 
 ### **Process Overview**
