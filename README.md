@@ -230,3 +230,9 @@ Without filtering, all networks under the organization ID will appear here, and 
 
 - The tool requires a valid API Key and OrgID to function correctly.  
 - Ensure that the Google Form is configured correctly with a dropdown question for network selection.
+
+---
+
+## Disclaimer
+
+This tool is provided "as is" without any warranty, express or implied. The developer assumes no responsibility for any damage or loss resulting from the use of this tool. Users are responsible for ensuring the proper configuration and use of the tool, including adherence to Meraki API rate limits and best practices. Always back up your data before making significant changes to your network configuration.
