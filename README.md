@@ -89,12 +89,17 @@ This tool was developed to address specific issues faced by organizations managi
 
 <hr>
 
-<h2><strong>Prerequisites (IMPORTANT)</strong></h2>
-<p>Before using this tool, please ensure you complete the following steps:</p>
-<ol>
-  <li><strong>Copy this Google Spreadsheet</strong><br>
-      Click on <code>File > Make a copy</code> to save a copy of this spreadsheet to your Google Drive.
-  </li>
+## **Prerequisites (IMPORTANT)**
+
+Before using this tool, please ensure you complete the following steps:
+
+1.  **Copy this Google Spreadsheet**
+    Click on the link below to make a copy of this spreadsheet to your Google Drive.
+    
+    [**Click here to make a copy of the Google Spreadsheet**](https://docs.google.com/spreadsheets/d/1ciOF8IqBuITHDi4BEXk0RNRtJ5KCfdIN5VD_QaGGacQ/copy)
+    
+    *(Alternatively, you can open the spreadsheet and go to `File > Make a copy`)*
+    
   <li><strong>Set up the linked Google Form</strong><br>
       After making a copy of the spreadsheet, a linked Google Form will also be copied automatically. To access the form:<br>
       - Go to the <strong>FormResponses</strong> tab.<br>
