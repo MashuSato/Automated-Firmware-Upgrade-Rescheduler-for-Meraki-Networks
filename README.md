@@ -76,18 +76,7 @@ This tool was developed to address specific issues faced by organizations managi
 
 <hr>
 
-<h2><strong>Purpose</strong></h2>
-<p>The Meraki Firmware Upgrade Management Tool is a Google Apps Script-based solution designed to simplify the scheduling and management of firmware upgrades for Meraki devices.</p>
-<p>Using this tool, users can:</p>
-<ul>
-  <li>Filter networks by name.</li>
-  <li>Collect and merge network and user-submitted scheduling data.</li>
-  <li>Automate firmware upgrade scheduling.</li>
-  <li>Verify successful rescheduling.</li>
-</ul>
-<p>This tool streamlines the upgrade process for network administrators, reducing manual effort and potential errors while ensuring that upgrades are scheduled as intended.</p>
 
-<hr>
 
 
 ## **Prerequisites (IMPORTANT)**
